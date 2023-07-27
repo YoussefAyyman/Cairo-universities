@@ -1,2 +1,2 @@
 # Find-your-private-university
-This Site Can help you to find you college 
+This Site Can help you to find you university 

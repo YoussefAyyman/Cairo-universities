@@ -9,7 +9,6 @@
 body{
     margin: 0;
     background-color: bisque;
-    
 }
 
 header{
@@ -24,6 +23,18 @@ header{
 .logo{
     display: flex;
     justify-content: center;
+    animation-name: fade;
+    animation-duration: 2s; 
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .list__EG{
@@ -32,6 +43,8 @@ header{
     color: rgb(0, 183, 255);
     font-family: "Audiowide", sans-serif;
     letter-spacing: 0.2;
+    animation-name: fade;
+    animation-duration: 2s;
 }
 
 section{
@@ -58,19 +71,37 @@ section{
     text-align: center;
     letter-spacing: .4rem;
     padding-bottom: 2rem;
+    animation-name: slidein;
+    animation-duration: 1s;
 }
 
 .sec1 h2{
     color: antiquewhite;
     text-align: center;
     letter-spacing: .2rem;
-    
+    animation-name: slidein;
+    animation-duration: 1s;
 }
 
 .sec1 h2 span{
     color: rgb(0, 183, 255);
-    text-align: center; 
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
 }
+
+
+@keyframes slidein {
+    from {
+      transform: translateY(100%);
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
 
 .sec1__btn{
     text-transform: uppercase;
@@ -85,12 +116,21 @@ section{
     display: flex;
     justify-content: center;
     margin:10rem 38rem;
+    animation-name: color;
+    animation-duration: 2s;
+}
+
+@keyframes color {
+    0% {color:rgb(0, 183, 255);}
+    50% {color: rgb(255, 0, 0);}
+    100%{color:rgb(0, 0, 0);}
 }
 
 .sec1__btn:hover{
     color: rgb(0, 183, 255);
     transform: scale(1.2,1.2);
 }
+
 
 .sec2{
     background-color: rgba(0,29,48,1);
@@ -156,12 +196,13 @@ section{
 
 .footer{ 
     background-color:rgb(0, 183, 255);;
-    padding: .5em;
+    padding: .1em;
     text-align: center;
 }
 
 .footer h1{
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .myname{
